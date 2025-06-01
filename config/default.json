@@ -1,0 +1,16 @@
+{
+  "rules": [],
+  "facts": [],
+  "logging": {
+    "level": "info",
+    "file": "logs/app.log"
+  },
+  "api": {
+    "baseUrl": "/api/v1",
+    "timeout": 5000
+  },
+  "storage": {
+    "type": "memory",
+    "options": {}
+  }
+}

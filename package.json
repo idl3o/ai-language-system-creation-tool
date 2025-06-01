@@ -1,0 +1,86 @@
+{
+  "name": "rule-based-logic-system",
+  "version": "1.0.0",
+  "description": "An automated intelligent language systems creation tool with rule-based logic and NLP capabilities.",
+  "main": "src/app.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "test": "jest",
+    "dev": "ts-node src/app.ts",
+    "cli": "ts-node src/cli/index.ts",
+    "generate": "ts-node src/cli/generate.ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "commander": "^11.1.0",
+    "compromise": "^14.10.0",
+    "express": "^4.17.1",
+    "inquirer": "^9.2.0",
+    "lodash": "^4.17.21",
+    "natural": "^6.5.0",
+    "openai": "^4.20.0",
+    "typescript": "^4.0.0",
+    "yaml": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^5.0.2",
+    "@types/inquirer": "^9.0.0",
+    "@types/jest": "^26.0.0",
+    "@types/lodash": "^4.14.0",
+    "@types/natural": "^5.1.5",
+    "@types/node": "^14.0.0",
+    "@types/supertest": "^6.0.3",
+    "@types/uuid": "^10.0.0",
+    "jest": "^26.6.0",
+    "supertest": "^6.3.3",
+    "ts-jest": "^26.5.0",
+    "ts-node": "^10.9.2"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "roots": [
+      "<rootDir>/src",
+      "<rootDir>/tests"
+    ],
+    "testMatch": [
+      "**/*.test.ts"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "!src/**/*.d.ts"
+    ],
+    "moduleNameMapper": {
+      "^node:(.*)$": "$1"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(formidable)/)"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/rule-based-logic-system.git"
+  },
+  "keywords": [
+    "rule-based",
+    "logic",
+    "system",
+    "nlp",
+    "natural-language-processing",
+    "ai",
+    "automated-systems",
+    "intelligent-systems",
+    "language-processing"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/rule-based-logic-system/issues"
+  },
+  "homepage": "https://github.com/yourusername/rule-based-logic-system#readme"
+}
